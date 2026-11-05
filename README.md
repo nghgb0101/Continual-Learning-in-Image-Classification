@@ -45,6 +45,19 @@
 
 ---
 
+## 📊 Bộ Dữ Liệu Thực Nghiệm Trên Kaggle (Datasets)
+
+Để thuận tiện cho việc tái lập kết quả 1-Click trên môi trường Kaggle GPU, toàn bộ 4 tập dữ liệu chuẩn đã được định dạng và chia sẵn `train/test`:
+
+| Tập Dữ Liệu | Thể Loại Phân Loại | Quy Mô & Kịch Bản Task | Liên Kết Kaggle Dataset |
+| :--- | :--- | :---: | :--- |
+| **CIFAR-100** | Phân loại vật thể tổng quát | 100 lớp (10 tasks x 10 lớp) | [thohintrnhngc/cifar-100-python](https://www.kaggle.com/datasets/thohintrnhngc/cifar-100-python) |
+| **CUB-200-2011** | Phân loại loài chim fine-grained | 200 lớp (10 tasks x 20 lớp) | [cyizhuo/cub-200-2011-by-classes-folder](https://www.kaggle.com/datasets/cyizhuo/cub-200-2011-by-classes-folder) |
+| **Stanford Cars-196** | Phân loại xe ô tô fine-grained | 196 lớp (9x20 + 1x16 lớp) | [jutrera/stanford-car-dataset-by-classes-folder](https://www.kaggle.com/datasets/jutrera/stanford-car-dataset-by-classes-folder) |
+| **ImageNet-R** | Dữ liệu lệch miền nghệ thuật (OOD) | 200 lớp (10 tasks x 20 lớp) | [thohintrnhngc/imagenet-r](https://www.kaggle.com/datasets/thohintrnhngc/imagenet-r) |
+
+---
+
 ## ⚙️ Hướng Dẫn Cài Đặt Môi Trường
 
 Khuyến nghị sử dụng Python 3.10+ trên môi trường GPU (CUDA 11.8 hoặc 12.x):
