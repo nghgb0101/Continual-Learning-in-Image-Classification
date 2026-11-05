@@ -1,11 +1,11 @@
 # 📦 Continual Learning in Image Classification — Group 3
 
 **Dự án:** Continual Learning with Pre-trained Vision Models: A Comprehensive Study on Parameter-Efficient Adaptation and Classifier Architectures  
-**Giảng viên hướng dẫn:** TS. Phan Thị Thu Hồng  
+**Giảng viên hướng dẫn:** PGS. TS. Phan Thị Thu Hồng  
 **Nhóm sinh viên thực hiện:**  
 1. **Trịnh Ngọc Thảo Hiền** — Nhánh 2: Hướng giải nghiệm đóng giải tích (Closed-Form Ridge Solver & SO-KAC)
-2. **Bảo** — Nhánh 3: Hướng cải tiến Backbone APT
-3. **Trân** — Nhánh 4: Hướng cải tiến Classifier Spherical (Mặt cầu siêu đa tạp)
+2. **Nguyễn Hữu Gia Bảo** — Nhánh 3: Hướng cải tiến Backbone APT
+3. **Huỳnh Thị Nhã Trân** — Nhánh 4: Hướng cải tiến Classifier Spherical (Mặt cầu siêu đa tạp)
 
 ---
 
@@ -23,7 +23,7 @@
 │   ├── Replication_CODA_Prompt_CUB200_M0_M1.ipynb  <-- CODA-Prompt (CVPR 2023): M0 Linear vs M1 KAC
 │   └── Replication_APT_CUB200_M0_M1.ipynb          <-- APT (ICCV 2025): M0 Cosine vs M1 KAC
 │
-├── 02_Improve_Hien_Nghiem_Dong/                    <-- [NHÁNH 2: CẢI TIẾN CỦA HIỀN - GIẢI NGHIỆM ĐÓNG]
+├── 02_Improve_Hien_Nghiem_Dong/                    <-- [NHÁNH 2: CẢI TIẾN CỦA THẢO HIỀN - GIẢI NGHIỆM ĐÓNG]
 │   ├── README.md                                   <-- Cơ sở toán học & Bảng ánh xạ thực nghiệm vào Report
 │   ├── 1_Main_Benchmarks/                          <-- [3 Mốc đối chứng lớn nhất bài báo (4 Datasets)]
 │   │   ├── 1_Benchmark_RanPAC_Replication_4Datasets.ipynb
@@ -36,11 +36,11 @@
 │       ├── 4_Ablation_Swin_Scales_Tiny_vs_Small.ipynb
 │       └── 5_Tuning_Hyperparameters_Suite.ipynb
 │
-├── 03_Improve_Bao_Backbone_APT/                    <-- [NHÁNH 3: CẢI TIẾN CỦA BẢO - BACKBONE APT]
-│   └── .gitkeep                                    <-- (Thư mục chờ nạp mã nguồn hoàn chỉnh của Bảo)
+├── 03_Improve_Bao_Backbone_APT/                    <-- [NHÁNH 3: CẢI TIẾN CỦA GIA BẢO - BACKBONE APT]
+│   └── .gitkeep                                    <-- (Thư mục chờ nạp mã nguồn hoàn chỉnh của Gia Bảo)
 │
-└── 04_Improve_Tran_Classifier_Spherical/           <-- [NHÁNH 4: CẢI TIẾN CỦA TRÂN - CLASSIFIER SPHERICAL]
-    └── .gitkeep                                    <-- (Thư mục chờ nạp mã nguồn hoàn chỉnh của Trân)
+└── 04_Improve_Tran_Classifier_Spherical/           <-- [NHÁNH 4: CẢI TIẾN CỦA NHÃ TRÂN - CLASSIFIER SPHERICAL]
+    └── .gitkeep                                    <-- (Thư mục chờ nạp mã nguồn hoàn chỉnh của Nhã Trân)
 ```
 
 ---
