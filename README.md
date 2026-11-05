@@ -24,7 +24,17 @@
 │   └── Replication_APT_CUB200_M0_M1.ipynb          <-- APT (ICCV 2025): M0 Cosine vs M1 KAC
 │
 ├── 02_Improve_Hien_Nghiem_Dong/                    <-- [NHÁNH 2: CẢI TIẾN CỦA HIỀN - GIẢI NGHIỆM ĐÓNG]
-│   └── .gitkeep                                    <-- (Thư mục chờ nạp mã nguồn hoàn chỉnh của Hiền)
+│   ├── README.md                                   <-- Cơ sở toán học & Bảng ánh xạ thực nghiệm vào Report
+│   ├── 1_Main_Benchmarks/                          <-- [3 Mốc đối chứng lớn nhất bài báo (4 Datasets)]
+│   │   ├── 1_Benchmark_RanPAC_Replication_4Datasets.ipynb
+│   │   ├── 2_Benchmark_ViT_SO_KAC_4Datasets.ipynb
+│   │   └── 3_Proposed_Swin_SO_KAC_4Datasets.ipynb
+│   └── 2_Ablations_and_Analysis/                   <-- [5 Bài bóc tách thành phần chuyên sâu (4 Datasets)]
+│       ├── 1_Ablation_Classifier_SO_KAC.ipynb
+│       ├── 2_Ablation_Backbone_Swin_Evolution.ipynb
+│       ├── 3_Ablation_ViT_Weights_IN21K_vs_IN1K.ipynb
+│       ├── 4_Ablation_Swin_Scales_Tiny_vs_Small.ipynb
+│       └── 5_Tuning_Hyperparameters_Suite.ipynb
 │
 ├── 03_Improve_Bao_Backbone_APT/                    <-- [NHÁNH 3: CẢI TIẾN CỦA BẢO - BACKBONE APT]
 │   └── .gitkeep                                    <-- (Thư mục chờ nạp mã nguồn hoàn chỉnh của Bảo)
