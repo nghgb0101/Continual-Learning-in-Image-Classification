@@ -17,10 +17,12 @@ Thư mục này chứa mã nguồn và các Jupyter Notebook tái lập (Replica
 
 ## 🔬 Định Nghĩa Hai Chế Độ Đối Chứng
 
-- **M0 (Paper Baseline):** Sử dụng 100% kiến trúc đầu phân loại (Linear/Cosine Head) và thiết lập nguyên bản từ bài báo tác giả gốc.
-- **M1 (Naive KAC):** Thay thế đầu phân loại bằng **KAC Layer** nguyên bản (Hu et al., CVPR 2025) gồm:
-  $$\mathbf{x}_{\text{norm}} = \text{LayerNorm}(\mathbf{f}), \quad \phi_k(x) = \exp\left(-\left(\frac{x - c_k}{\Delta}\right)^2\right), \quad \hat{\mathbf{y}} = \mathbf{W}_{\text{spline}} \cdot \phi(\mathbf{x}_{\text{norm}})$$
-  với $G = 4$ grids trong khoảng $[-2.0, 2.0]$.
+- **M0 (Paper Baseline):** Sử dụng 100% kiến trúc đầu phân loại (Linear / Cosine Head) và thiết lập nguyên bản từ bài báo tác giả gốc.
+- **M1 (Naive KAC):** Thay thế đầu phân loại bằng **KAC Layer** nguyên bản (Hu et al., CVPR 2025) với $G = 4$ grids trong khoảng $[-2.0, 2.0]$:
+
+$$
+\mathbf{x}_{\text{norm}} = \text{LayerNorm}(\mathbf{f}), \quad \phi_k(x) = \exp\left(-\left(\frac{x - c_k}{\Delta}\right)^2\right), \quad \hat{\mathbf{y}} = \mathbf{W}_{\text{spline}} \cdot \phi(\mathbf{x}_{\text{norm}})
+$$
 
 ---
 
