@@ -94,7 +94,7 @@ My_Part/ (03_Improve_Bao_Backbone_APT)
 │   ├── apt_cub200_adapter_deep9_11_uniform-ppf_val_split.ipynb      <-- [TOP-3 ADAPTER] Adapter tầng sâu (9–11) + Uniform PPF
 │   └── apt_cub200_adapter_deep9_11_lppf_val_split.ipynb             <-- [TOP-3 ADAPTER] Adapter tầng sâu (9–11) + L-PPF
 │
-├── 2_Multi_Dataset_Validation/                                      <-- [Bộ thẩm định đa miền dữ liệu (10 Notebooks 3 Datasets)]
+├── Multi_Dataset_Validation(CIFAR100 & STANDFORD CARS & ImageNet-R)/                                      <-- [Bộ thẩm định đa miền dữ liệu (10 Notebooks 3 Datasets)]
 │   ├── apt_3dataset_kac_val_split.ipynb                             <-- [BASELINE] APT + KAC Classifier trên 3 Datasets
 │   ├── apt_3dataset_hybrid_val_split_1.ipynb                        <-- APT + Hybrid Head trên 3 Datasets
 │   ├── apt_3dataset_ppf_upgrade_val_split_1.ipynb                   <-- APT + L-PPF trên 3 Datasets
@@ -106,7 +106,7 @@ My_Part/ (03_Improve_Bao_Backbone_APT)
 │   ├── apt_3dataset_adapter_deep9_11_ppf_val_split.ipynb            <-- Top-3 Adapter (9–11) + Uniform PPF trên 3 Datasets
 │   └── apt_3dataset_adapter_deep9_11_lppf_val_split.ipynb           <-- Top-3 Adapter (9–11) + L-PPF trên 3 Datasets
 │
-└── 3_KetQua_Va_BieuDo/                                              <-- [Dữ liệu thực nghiệm & Trực quan hóa]
+└── Result/                                              <-- [Dữ liệu thực nghiệm & Trực quan hóa]
     └── APT_CUB200_Experiments_Results.xlsx                         <-- Bảng số liệu Excel trên CUB200 (Mean ± Std trên 3 Seeds)
 
 ```
