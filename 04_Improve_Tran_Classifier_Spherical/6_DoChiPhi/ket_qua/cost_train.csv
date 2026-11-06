@@ -1,0 +1,5 @@
+dataset,GPU,task1_images,epoch_time_s,train_img_per_s_real,train_img_per_s_gpu,peak_VRAM_train_GB,trainable_prompt,trainable_KAC_head,trainable_total,train_images_all_tasks,full_epochs,est_full_train_h_real,est_full_train_h_gpu
+CIFAR100,Tesla T4,4000,21.7892,182.1083,175.3622,3.7305,18432,308736,327168,40000,30,1.8304,1.9008
+CUB200,Tesla T4,479,3.4372,130.3388,151.4761,4.2386,18432,615936,634368,4794,25,0.2554,0.2198
+StanfordCars,Tesla T4,538,4.4187,115.8714,144.4759,4.2210,18432,603648,622080,6442,50,0.7722,0.6193
+ImageNet_R,Tesla T4,1926,13.6031,141.1442,143.7313,4.2222,18432,615936,634368,19124,30,1.1291,1.1088

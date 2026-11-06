@@ -1,0 +1,4 @@
+backbone,timm_name,params_M,GFLOPs,img_per_s_T4_fp16,feat_dim
+ViT-B/16,vit_base_patch16_224,85.80,17.56,475.67,768
+Swin-B,swin_base_patch4_window7_224.ms_in22k_ft_in1k,86.74,15.43,239.05,1024
+Swin-T,swin_tiny_patch4_window7_224.ms_in1k,27.52,4.49,521.51,768

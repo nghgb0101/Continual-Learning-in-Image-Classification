@@ -1,0 +1,13 @@
+dataset,proj,dim,explained_var_task1
+CIFAR100,pca,64,0.719
+CIFAR100,pca,128,0.811
+CIFAR100,pca,256,0.902
+CUB200,pca,64,0.793
+CUB200,pca,128,0.891
+CUB200,pca,256,0.97
+ImageNet_R,pca,64,0.649
+ImageNet_R,pca,128,0.763
+ImageNet_R,pca,256,0.88
+StanfordCars,pca,64,0.792
+StanfordCars,pca,128,0.891
+StanfordCars,pca,256,0.968

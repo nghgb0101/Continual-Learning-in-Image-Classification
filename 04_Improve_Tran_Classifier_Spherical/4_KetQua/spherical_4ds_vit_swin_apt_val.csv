@@ -1,0 +1,69 @@
+dataset,source,variant,n_seeds,avg,avg_sd,last,last_sd,forg,forg_sd,config
+CIFAR100,KAC,KAC,3,92.33,0.60,88.01,0.72,3.65,1.11,
+CIFAR100,frozen ViT-B/16,proto,3,86.11,0.29,80.28,0.50,6.26,0.39,kappa=16 k=5
+CIFAR100,frozen ViT-B/16,fuse,3,92.95,0.49,89.08,0.60,3.60,0.76,w=0.25 kappa=32 k=5
+CIFAR100,frozen ViT-B/16,hier,3,90.85,0.42,85.01,0.40,6.14,0.46,kappa=8 k=5 lam=0.5 w_in=0
+CIFAR100,frozen Swin-B,proto,3,89.31,0.51,84.22,0.53,5.23,0.46,kappa=16 k=5
+CIFAR100,frozen Swin-B,fuse,3,93.58,0.52,89.83,0.57,3.47,0.56,w=0.5 kappa=16 k=5
+CIFAR100,frozen Swin-B,hier,3,92.24,0.57,87.29,0.51,5.04,0.71,kappa=8 k=5 lam=0.5 w_in=0
+CIFAR100,frozen Swin-T,proto,3,78.13,0.18,70.14,0.39,8.81,0.36,kappa=16 k=5
+CIFAR100,frozen Swin-T,fuse,3,92.76,0.54,88.64,0.61,3.54,0.93,w=0.25 kappa=16 k=5
+CIFAR100,frozen Swin-T,hier,3,87.91,0.64,79.75,0.52,8.31,1.23,kappa=8 k=5 lam=0.5 w_in=0
+CIFAR100,oracle,oracle,3,98.48,0.05,98.42,0.11,0.01,0.07,
+CUB200,KAC,KAC,3,83.87,0.57,75.94,0.79,8.52,1.88,
+CUB200,frozen ViT-B/16,proto,3,89.63,0.22,84.50,0.88,5.46,1.30,kappa=8 k=1
+CUB200,frozen ViT-B/16,fuse,3,89.80,0.63,84.89,0.86,5.49,0.88,w=0.75 kappa=64 k=1
+CUB200,frozen ViT-B/16,hier,3,89.76,0.36,84.97,0.86,5.62,0.98,kappa=32 k=1 lam=0.5 w_in=0
+CUB200,frozen Swin-B,proto,3,88.14,1.17,82.61,0.43,6.85,0.16,kappa=32 k=3
+CUB200,frozen Swin-B,fuse,3,89.85,0.59,85.00,0.66,6.51,0.83,w=0.5 kappa=32 k=3
+CUB200,frozen Swin-B,hier,3,89.08,1.07,83.86,0.25,6.88,0.28,kappa=16 k=1 lam=0.5 w_in=0
+CUB200,frozen Swin-T,proto,3,68.78,0.48,58.17,0.63,12.35,0.66,kappa=16 k=3
+CUB200,frozen Swin-T,fuse,3,86.43,0.48,79.75,0.60,7.38,1.17,w=0.5 kappa=8 k=1
+CUB200,frozen Swin-T,hier,3,80.63,1.29,70.31,0.48,11.88,0.23,kappa=8 k=1 lam=0.5 w_in=0.5
+CUB200,oracle,oracle,3,96.58,0.74,96.83,0.29,0.12,0.35,
+StanfordCars,KAC,KAC,3,73.96,2.07,63.14,3.96,8.64,2.41,
+StanfordCars,frozen ViT-B/16,proto,3,52.02,1.58,38.97,0.27,13.46,0.43,kappa=16 k=5
+StanfordCars,frozen ViT-B/16,fuse,3,74.38,2.25,65.10,2.61,7.36,0.77,w=0.5 kappa=8 k=3
+StanfordCars,frozen ViT-B/16,hier,3,71.52,1.25,57.95,1.59,15.14,2.73,kappa=16 k=5 lam=0.5 w_in=0
+StanfordCars,frozen Swin-B,proto,3,49.78,2.34,37.49,1.43,12.97,1.16,kappa=16 k=5
+StanfordCars,frozen Swin-B,fuse,3,75.05,2.02,65.50,2.59,8.01,1.86,w=0.25 kappa=16 k=5
+StanfordCars,frozen Swin-B,hier,3,70.94,1.37,57.85,1.09,14.57,1.75,kappa=16 k=5 lam=0.5 w_in=0
+StanfordCars,frozen Swin-T,proto,3,41.02,2.74,29.07,1.07,12.64,0.73,kappa=16 k=5
+StanfordCars,frozen Swin-T,fuse,3,74.34,2.38,64.73,2.57,8.41,1.64,w=0.5 kappa=8 k=5
+StanfordCars,frozen Swin-T,hier,3,68.20,0.84,54.65,0.97,16.23,1.90,kappa=8 k=5 lam=0.5 w_in=0
+StanfordCars,oracle,oracle,3,92.91,1.71,93.11,0.69,-0.35,0.40,
+ImageNet_R,KAC,KAC,3,82.85,1.36,77.91,0.44,2.37,0.28,
+ImageNet_R,frozen ViT-B/16,proto,3,69.36,0.47,62.91,0.70,7.14,0.09,kappa=8 k=5
+ImageNet_R,frozen ViT-B/16,fuse,3,83.03,1.37,78.47,0.10,2.60,0.14,w=0.25 kappa=16 k=5
+ImageNet_R,frozen ViT-B/16,hier,3,82.11,1.05,76.13,0.11,5.03,0.42,kappa=8 k=5 lam=0.5 w_in=0
+ImageNet_R,frozen Swin-B,proto,3,70.17,0.44,64.15,0.37,6.86,0.93,kappa=8 k=5
+ImageNet_R,frozen Swin-B,fuse,3,83.71,1.15,79.54,0.15,2.42,0.04,w=0.5 kappa=8 k=5
+ImageNet_R,frozen Swin-B,hier,3,82.41,1.37,76.97,0.21,4.23,0.67,kappa=8 k=1 lam=0.5 w_in=0
+ImageNet_R,frozen Swin-T,proto,3,55.04,0.86,48.40,0.45,7.93,0.62,kappa=8 k=5
+ImageNet_R,frozen Swin-T,fuse,3,83.16,1.32,78.57,0.12,2.43,0.05,w=0.25 kappa=16 k=5
+ImageNet_R,frozen Swin-T,hier,3,81.10,1.55,74.30,0.25,5.48,0.38,kappa=8 k=5 lam=0.5 w_in=0
+ImageNet_R,oracle,oracle,3,92.13,1.09,92.49,0.28,-0.56,0.08,
+CIFAR100,apt_stale,proto,3,91.77,0.33,85.52,0.61,9.78,0.96,kappa=8 k=1
+CIFAR100,apt_stale,fuse,3,93.28,0.42,89.10,0.84,5.29,1.59,w=0.5 kappa=8 k=5
+CIFAR100,apt_stale,hier,3,92.44,0.31,86.42,0.86,9.33,1.21,kappa=8 k=1 lam=0.5 w_in=0
+CIFAR100,apt_refresh,proto,3,93.50,0.25,90.04,0.20,3.25,0.35,kappa=16 k=5
+CIFAR100,apt_refresh,fuse,3,93.81,0.34,90.42,0.08,3.14,0.28,w=0.5 kappa=32 k=5
+CIFAR100,apt_refresh,hier,3,93.88,0.30,90.43,0.11,3.34,0.08,kappa=16 k=5 lam=0.5 w_in=0
+CUB200,apt_stale,proto,3,86.67,1.10,77.44,2.49,17.31,2.71,kappa=8 k=1
+CUB200,apt_stale,fuse,3,87.37,0.96,79.28,1.21,14.48,1.03,w=0.5 kappa=32 k=5
+CUB200,apt_stale,hier,3,86.79,1.16,77.81,2.59,16.64,3.04,kappa=32 k=1 lam=0.5 w_in=0
+CUB200,apt_refresh,proto,3,90.33,0.85,86.14,0.67,5.15,0.65,kappa=64 k=3
+CUB200,apt_refresh,fuse,3,90.24,0.82,85.94,0.89,5.43,0.84,w=0.75 kappa=64 k=3
+CUB200,apt_refresh,hier,3,90.32,0.86,86.22,0.57,4.97,0.53,kappa=64 k=3 lam=2 w_in=0.5
+StanfordCars,apt_stale,proto,3,63.46,0.48,47.10,1.50,30.87,2.16,kappa=16 k=5
+StanfordCars,apt_stale,fuse,3,74.79,1.73,64.06,2.08,12.22,2.04,w=0.25 kappa=16 k=5
+StanfordCars,apt_stale,hier,3,71.40,1.63,55.55,0.74,26.40,2.04,kappa=8 k=5 lam=0.5 w_in=0
+StanfordCars,apt_refresh,proto,3,70.39,1.63,63.76,0.61,5.20,1.35,kappa=16 k=5
+StanfordCars,apt_refresh,fuse,3,75.90,1.50,69.06,0.35,5.80,2.09,w=0.5 kappa=32 k=5
+StanfordCars,apt_refresh,hier,3,77.11,1.51,68.50,0.47,8.73,1.56,kappa=16 k=5 lam=0.5 w_in=0
+ImageNet_R,apt_stale,proto,2,81.03,1.87,76.21,0.38,7.43,0.41,kappa=16 k=5
+ImageNet_R,apt_stale,fuse,2,83.47,1.91,79.33,0.43,3.83,0.26,w=0.25 kappa=32 k=5
+ImageNet_R,apt_stale,hier,2,83.19,1.62,77.99,0.30,6.96,0.49,kappa=16 k=5 lam=0.5 w_in=0
+ImageNet_R,apt_refresh,proto,2,81.78,1.74,78.16,0.38,3.95,0.63,kappa=16 k=5
+ImageNet_R,apt_refresh,fuse,2,83.32,1.77,79.84,0.12,2.85,0.00,w=0.5 kappa=32 k=5
+ImageNet_R,apt_refresh,hier,2,83.75,1.35,79.60,0.30,3.97,0.18,kappa=16 k=5 lam=0.5 w_in=0
