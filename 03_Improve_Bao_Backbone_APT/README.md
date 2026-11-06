@@ -10,7 +10,7 @@
 
 Trong bài toán **Exemplar-Free Class-Incremental Learning (EFCIL)**, mô hình phải học tuần tự các tập lớp mới mà tuyệt đối **không lưu trữ mẫu cũ** ($M_{\text{buffer}} = 0$) và **không biết ID của task khi suy luận**.
 
-Mô hình nền tảng **Additive Prompt Tuning (APT - ICCV 2025)** đóng băng toàn bộ backbone Vision Transformer (ViT-B/16, 85.8M tham số) và tối ưu một tập prompt cộng tính $\Phi_t = \{\mathbf{p}_k^l, \mathbf{p}_v^l\}_{l=1}^{12}$ tại vector $\texttt{[CLS]}$. Quá trình chuyển giao tri thức giữa các task được thực hiện qua cơ chế **Progressive Prompt Fusion (PPF)**:
+Mô hình nền tảng **Additive Prompt Tuning (APT - ICCV 2025)** đóng băng toàn bộ backbone Vision Transformer (ViT-B/16, 85.8M tham số) và tối ưu một tập prompt cộng tính $\Phi_t = \{\mathbf{p}_{k}^l, \mathbf{p}_{v}^l\}_{l=1}^{12}$ tại vector [CLS]. Quá trình chuyển giao tri thức giữa các task được thực hiện qua cơ chế **Progressive Prompt Fusion (PPF)**:
 
 $$\mathbf{P}_t^{\text{PPF}} = \alpha \mathbf{P}_{t-1}^{\text{PPF}} + (1 - \alpha) \mathbf{P}_t$$
 
@@ -72,7 +72,7 @@ $$\mathbf{P}_t^{\text{PPF}, (l)} = \alpha_l \mathbf{P}_{t-1}^{\text{PPF}, (l)} +
 
 Tại thời điểm suy luận, mẫu kiểm tra $x$ được xử lý trực tiếp qua mạng hợp nhất mà **không cần task ID**, kết hợp đầu phân loại **Hybrid Head (Detach KAC Gradient)** để đưa ra dự đoán tối ưu:
 
-$$\hat{y} = \arg\max_{c \in \mathcal{C}_{1:t}} \left[ \operatorname{softmax}\left(\frac{\ell_{\text{cos}}(x)}{\tau}\right) + \alpha_{\text{hyb}} \operatorname{softmax}(\ell_{\text{kac}}(x)) \right]_c$$
+   $$\hat{y} = \arg\max_{c \in \mathcal{C}_{1:t}} \left[ \text{softmax}\left(\frac{\ell_{\text{cos}}(x)}{\tau}\right) + \alpha_{\text{hyb}} \text{softmax}(\ell_{\text{kac}}(x)) \right]_c$$
 
 ---
 
@@ -82,17 +82,17 @@ $$\hat{y} = \arg\max_{c \in \mathcal{C}_{1:t}} \left[ \operatorname{softmax}\lef
 My_Part/ (03_Improve_Bao_Backbone_APT)
 ├── README.md                                                        <-- (Tài liệu này) Báo cáo chi tiết phương pháp & kết quả
 │
-├── 1_CUB200_Architectural_Exploration/                              <-- [Bộ thí nghiệm chuyên sâu Fine-grained (10 Notebooks CUB-200)]
+├── CUB200_Experiments/                             <-- [Bộ thí nghiệm chuyên sâu Fine-grained (10 Notebooks CUB-200)]
 │   ├── apt_cub200_kac_classifier_val_split.ipynb                    <-- [BASELINE] APT + KAC Classifier (Uniform PPF, α=0.70)
 │   ├── apt_cub200_hybrid_classifier_val_split.ipynb                 <-- [CẢI TIẾN CLASSIFIER] APT + Hybrid Head (Cosine + Detach KAC)
 │   ├── apt_cub200_lppf_val_split.ipynb                              <-- [CẢI TIẾN BACKBONE] APT + Hierarchical L-PPF (α: 0.85 → 0.55)
 │   ├── apt_cub200_reverse_lppf_val_split.ipynb                      <-- [ABLATION ĐỐI CHỨNG] APT + Reverse L-PPF (α: 0.55 → 0.85)
 │   ├── apt_cub200_adapter_uniform-ppf_val_split.ipynb               <-- [CẢI TIẾN ADAPTER] Full Adapter (0–11) + Uniform PPF
-│   ├── apt_cub200_adapter_lppf_val_split.ipynb                      <-- [CẢI TIẾN KẾT HỢP] Full Adapter (0–11) + L-PPF Phân tầng
+│   ├── apt_cub200_adapter_lppf_val_split.ipynb                      <-- [CẢI TIẾN KẾT HỢP] Full Adapter (0–11) + L-PPF 
 │   ├── apt_cub200_adapter_deep6_11_uniform-ppf_val_split.ipynb      <-- [DEEP ADAPTER] Adapter tầng sâu (6–11) + Uniform PPF
-│   ├── apt_cub200_adapter_deep6_11_lppf_val_split.ipynb             <-- [DEEP ADAPTER] Adapter tầng sâu (6–11) + L-PPF Phân tầng
+│   ├── apt_cub200_adapter_deep6_11_lppf_val_split.ipynb             <-- [DEEP ADAPTER] Adapter tầng sâu (6–11) + L-PPF 
 │   ├── apt_cub200_adapter_deep9_11_uniform-ppf_val_split.ipynb      <-- [TOP-3 ADAPTER] Adapter tầng sâu (9–11) + Uniform PPF
-│   └── apt_cub200_adapter_deep9_11_lppf_val_split.ipynb             <-- [TOP-3 ADAPTER] Adapter tầng sâu (9–11) + L-PPF Phân tầng
+│   └── apt_cub200_adapter_deep9_11_lppf_val_split.ipynb             <-- [TOP-3 ADAPTER] Adapter tầng sâu (9–11) + L-PPF
 │
 ├── 2_Multi_Dataset_Validation/                                      <-- [Bộ thẩm định đa miền dữ liệu (10 Notebooks 3 Datasets)]
 │   ├── apt_3dataset_kac_val_split.ipynb                             <-- [BASELINE] APT + KAC Classifier trên 3 Datasets
@@ -107,7 +107,7 @@ My_Part/ (03_Improve_Bao_Backbone_APT)
 │   └── apt_3dataset_adapter_deep9_11_lppf_val_split.ipynb           <-- Top-3 Adapter (9–11) + L-PPF trên 3 Datasets
 │
 └── 3_KetQua_Va_BieuDo/                                              <-- [Dữ liệu thực nghiệm & Trực quan hóa]
-    └── APT_CUB200_Experiments_Results.xlsx                         <-- Bảng số liệu Excel gốc (Mean ± Std trên 3 Seeds)
+    └── APT_CUB200_Experiments_Results.xlsx                         <-- Bảng số liệu Excel trên CUB200 (Mean ± Std trên 3 Seeds)
 
 ```
 
