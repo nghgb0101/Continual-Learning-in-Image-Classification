@@ -1,0 +1,61 @@
+dataset,n_seeds,source,variant,avg,avg_sd,last,last_sd,forg,forg_sd,config
+CIFAR-100,3,frozen,KAC,92.33,0.60,88.01,0.72,3.65,1.11,
+CIFAR-100,3,frozen,proto,86.11,0.29,80.28,0.50,6.26,0.39,kappa=16 k=5
+CIFAR-100,3,frozen,fuse,92.95,0.49,89.08,0.60,3.60,0.76,w=0.25 kappa=32 k=5
+CIFAR-100,3,frozen,hier,90.85,0.42,85.01,0.40,6.14,0.46,kappa=8 k=5 lam=0.5 w_in=0
+CIFAR-100,3,frozen,oracle,98.48,0.05,98.42,0.11,0.01,0.07,
+CIFAR-100,3,apt_stale,KAC,92.33,0.60,88.01,0.72,3.65,1.11,
+CIFAR-100,3,apt_stale,proto,91.77,0.33,85.52,0.61,9.78,0.96,kappa=8 k=1
+CIFAR-100,3,apt_stale,fuse,93.28,0.42,89.10,0.84,5.29,1.59,w=0.5 kappa=8 k=5
+CIFAR-100,3,apt_stale,hier,92.44,0.31,86.42,0.86,9.33,1.21,kappa=8 k=1 lam=0.5 w_in=0
+CIFAR-100,3,apt_stale,oracle,98.48,0.05,98.42,0.11,0.01,0.07,
+CIFAR-100,3,apt_refresh,KAC,92.33,0.60,88.01,0.72,3.65,1.11,
+CIFAR-100,3,apt_refresh,proto,93.50,0.25,90.04,0.20,3.25,0.35,kappa=16 k=5
+CIFAR-100,3,apt_refresh,fuse,93.81,0.34,90.42,0.08,3.14,0.28,w=0.5 kappa=32 k=5
+CIFAR-100,3,apt_refresh,hier,93.88,0.30,90.43,0.11,3.34,0.08,kappa=16 k=5 lam=0.5 w_in=0
+CIFAR-100,3,apt_refresh,oracle,98.48,0.05,98.42,0.11,0.01,0.07,
+CUB-200,3,frozen,KAC,83.87,0.57,75.94,0.79,8.52,1.88,
+CUB-200,3,frozen,proto,89.63,0.22,84.50,0.88,5.46,1.30,kappa=8 k=1
+CUB-200,3,frozen,fuse,89.80,0.63,84.89,0.86,5.49,0.88,w=0.75 kappa=64 k=1
+CUB-200,3,frozen,hier,89.76,0.36,84.97,0.86,5.62,0.98,kappa=32 k=1 lam=0.5 w_in=0
+CUB-200,3,frozen,oracle,96.58,0.74,96.83,0.29,0.12,0.35,
+CUB-200,3,apt_stale,KAC,83.87,0.57,75.94,0.79,8.52,1.88,
+CUB-200,3,apt_stale,proto,86.67,1.10,77.44,2.49,17.31,2.71,kappa=8 k=1
+CUB-200,3,apt_stale,fuse,87.37,0.96,79.28,1.21,14.48,1.03,w=0.5 kappa=32 k=5
+CUB-200,3,apt_stale,hier,86.79,1.16,77.81,2.59,16.64,3.04,kappa=32 k=1 lam=0.5 w_in=0
+CUB-200,3,apt_stale,oracle,96.58,0.74,96.83,0.29,0.12,0.35,
+CUB-200,3,apt_refresh,KAC,83.87,0.57,75.94,0.79,8.52,1.88,
+CUB-200,3,apt_refresh,proto,90.33,0.85,86.14,0.67,5.15,0.65,kappa=64 k=3
+CUB-200,3,apt_refresh,fuse,90.24,0.82,85.94,0.89,5.43,0.84,w=0.75 kappa=64 k=3
+CUB-200,3,apt_refresh,hier,90.32,0.86,86.22,0.57,4.97,0.53,kappa=64 k=3 lam=2 w_in=0.5
+CUB-200,3,apt_refresh,oracle,96.58,0.74,96.83,0.29,0.12,0.35,
+Stanford Cars,3,frozen,KAC,73.96,2.07,63.14,3.96,8.64,2.41,
+Stanford Cars,3,frozen,proto,52.02,1.58,38.97,0.27,13.46,0.43,kappa=16 k=5
+Stanford Cars,3,frozen,fuse,74.38,2.25,65.10,2.61,7.36,0.77,w=0.5 kappa=8 k=3
+Stanford Cars,3,frozen,hier,71.52,1.25,57.95,1.59,15.14,2.73,kappa=16 k=5 lam=0.5 w_in=0
+Stanford Cars,3,frozen,oracle,92.91,1.71,93.11,0.69,-0.35,0.40,
+Stanford Cars,3,apt_stale,KAC,73.96,2.07,63.14,3.96,8.64,2.41,
+Stanford Cars,3,apt_stale,proto,63.46,0.48,47.10,1.50,30.87,2.16,kappa=16 k=5
+Stanford Cars,3,apt_stale,fuse,74.79,1.73,64.06,2.08,12.22,2.04,w=0.25 kappa=16 k=5
+Stanford Cars,3,apt_stale,hier,71.40,1.63,55.55,0.74,26.40,2.04,kappa=8 k=5 lam=0.5 w_in=0
+Stanford Cars,3,apt_stale,oracle,92.91,1.71,93.11,0.69,-0.35,0.40,
+Stanford Cars,3,apt_refresh,KAC,73.96,2.07,63.14,3.96,8.64,2.41,
+Stanford Cars,3,apt_refresh,proto,70.39,1.63,63.76,0.61,5.20,1.35,kappa=16 k=5
+Stanford Cars,3,apt_refresh,fuse,75.90,1.50,69.06,0.35,5.80,2.09,w=0.5 kappa=32 k=5
+Stanford Cars,3,apt_refresh,hier,77.11,1.51,68.50,0.47,8.73,1.56,kappa=16 k=5 lam=0.5 w_in=0
+Stanford Cars,3,apt_refresh,oracle,92.91,1.71,93.11,0.69,-0.35,0.40,
+ImageNet-R,3,frozen,KAC,82.85,1.36,77.91,0.44,2.37,0.28,
+ImageNet-R,3,frozen,proto,69.36,0.47,62.91,0.70,7.14,0.09,kappa=8 k=5
+ImageNet-R,3,frozen,fuse,83.03,1.37,78.47,0.10,2.60,0.14,w=0.25 kappa=16 k=5
+ImageNet-R,3,frozen,hier,82.11,1.05,76.13,0.11,5.03,0.42,kappa=8 k=5 lam=0.5 w_in=0
+ImageNet-R,3,frozen,oracle,92.13,1.09,92.49,0.28,-0.56,0.08,
+ImageNet-R,3,apt_stale,KAC,82.85,1.36,77.91,0.44,2.37,0.28,
+ImageNet-R,3,apt_stale,proto,81.23,1.37,76.24,0.27,7.51,0.32,kappa=16 k=5
+ImageNet-R,3,apt_stale,fuse,83.67,1.40,79.37,0.31,3.73,0.26,w=0.25 kappa=32 k=5
+ImageNet-R,3,apt_stale,hier,83.19,1.23,78.03,0.24,6.01,0.50,kappa=8 k=3 lam=0.5 w_in=0
+ImageNet-R,3,apt_stale,oracle,92.13,1.09,92.49,0.28,-0.56,0.08,
+ImageNet-R,3,apt_refresh,KAC,82.85,1.36,77.91,0.44,2.37,0.28,
+ImageNet-R,3,apt_refresh,proto,81.87,1.24,77.86,0.58,4.33,0.80,kappa=16 k=5
+ImageNet-R,3,apt_refresh,fuse,83.65,1.15,79.54,0.31,2.88,0.33,w=0.5 kappa=16 k=5
+ImageNet-R,3,apt_refresh,hier,83.69,0.96,79.38,0.43,4.04,0.17,kappa=16 k=5 lam=0.5 w_in=0
+ImageNet-R,3,apt_refresh,oracle,92.13,1.09,92.49,0.28,-0.56,0.08,

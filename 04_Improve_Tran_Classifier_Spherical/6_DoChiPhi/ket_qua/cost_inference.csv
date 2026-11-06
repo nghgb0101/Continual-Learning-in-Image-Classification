@@ -1,0 +1,21 @@
+dataset,config,GFLOPs_per_img,ms_per_img,img_per_s,peak_VRAM_infer_GB,extra_backbone_params_M,extra_trainable_params
+CIFAR100,APT + KAC (baseline),17.5634,2.7783,359.9368,1.1008,0.0000,0
+CIFAR100,"+ Spherical, APT (stale)",17.5638,2.7917,358.2000,1.1008,0.0000,0
+CIFAR100,"+ Spherical, ViT-B/16 đóng băng",35.1268,5.5285,180.8805,1.1008,0.0000,0
+CIFAR100,"+ Spherical, Swin-B",32.9938,7.7953,128.2820,1.8354,86.7432,0
+CIFAR100,"+ Spherical, Swin-T",22.0536,5.0921,196.3845,1.5891,27.5194,0
+CUB200,APT + KAC (baseline),17.5637,3.0178,331.3624,1.0875,0.0000,0
+CUB200,"+ Spherical, APT (stale)",17.5644,3.0380,329.1651,1.0875,0.0000,0
+CUB200,"+ Spherical, ViT-B/16 đóng băng",35.1275,6.0175,166.1815,1.0875,0.0000,0
+CUB200,"+ Spherical, Swin-B",32.9946,8.5515,116.9392,1.8221,86.7432,0
+CUB200,"+ Spherical, Swin-T",22.0542,5.6251,177.7744,1.5758,27.5194,0
+StanfordCars,APT + KAC (baseline),17.5637,3.1958,312.9061,1.0895,0.0000,0
+StanfordCars,"+ Spherical, APT (stale)",17.5644,3.2203,310.5267,1.0895,0.0000,0
+StanfordCars,"+ Spherical, ViT-B/16 đóng băng",35.1275,6.3230,158.1524,1.0895,0.0000,0
+StanfordCars,"+ Spherical, Swin-B",32.9946,8.8336,113.2042,1.8241,86.7432,0
+StanfordCars,"+ Spherical, Swin-T",22.0542,5.6189,177.9707,1.5778,27.5194,0
+ImageNet_R,APT + KAC (baseline),17.5637,2.9842,335.0957,1.0962,0.0000,0
+ImageNet_R,"+ Spherical, APT (stale)",17.5644,2.9871,334.7770,1.0962,0.0000,0
+ImageNet_R,"+ Spherical, ViT-B/16 đóng băng",35.1275,5.8404,171.2218,1.0963,0.0000,0
+ImageNet_R,"+ Spherical, Swin-B",32.9946,8.1387,122.8700,1.8309,86.7432,0
+ImageNet_R,"+ Spherical, Swin-T",22.0542,5.2762,189.5300,1.5846,27.5194,0
